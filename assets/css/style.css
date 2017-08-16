@@ -115,36 +115,53 @@ li a.active {
 
 #portfoliobody {
     width: 400px;
-    height: 450px;
+    height: 550px;
     padding: 10px 25px 25px 25px;
     background-color: white;
     color: #777777;
 }
 
-.p1, .p2 {
-    display:inline-block;
-    float: left;
-    box-sizing: border-box;
+.section1, .section2 {
+    position: relative;
+    display: inline-block;
     margin: 25px;
-    width: calc(25% - 10px);
+} 
+
+.section3, .section4 {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+} 
+
+.p1, .p2 {
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin: auto;
+    left: 20px;
 }
 
 .p3, .p4 {
-    display:inline-block;
-    float: left;
-    box-sizing: border-box;
-    margin: 25px;
-    width: calc(25% - 10px);
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin: auto;
+    left: 20px;
 }
 
-.pimg {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 5px;
-    width: 125px;
-    height: 100px;
+.p1, .p2, .p3, .p4 span {
+    position: absolute;
+    top: 115px;
+    right: auto;
+    left: 32px;
+    margin: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 18px;
+    color: #777777;
+    font-weight: bold;
+    background-color: #DCDCDC;
 }
-   
+
 a:link {
 	color: black;
 }
@@ -157,8 +174,6 @@ a:hover {
   	background: transparent;
    	color: #4aaaa5;
     opacity: 0.7;
-}
-
 }
 
 label {
